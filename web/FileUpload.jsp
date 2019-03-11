@@ -60,17 +60,36 @@ body, html {
         <div class="bg-image"><h1>Ongoing Reasearches</h1></div>
         <div  class="bg-text">
     <p>Upload your problem here</p>
-        <Table>
+    <form method="post" action="UploadServlet" enctype="multipart/form-data">
+        <Table a>
             <tr>
-                <td>
-                     <input type="file" name="File">
-                </td>
-                <td>
-                    <input type="submit">
-                </td>   
+                <td align="left">University</td>
+                <td  align="left" ><input type="text" name="University" size="50"/></td>
+            </tr>
+                        
+             <tr>  
+                 <td align="left">Student ID</td>
+                <td  align="left"><input type="text" name="StudentID" size="50"/></td>
+             </tr> 
+             
+             <tr>
+                <td align="left">Year</td>
+                <td  align="left"><input type="text" name="Year" size="50"></td>
+             </tr> 
+             
+              <tr> 
+                <td align="left">Select your file</td>
+                <td  align="left"><input type="file" name="uploads"></td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                      
+                  </td><td> <input type="submit"> </td> 
+                 
                 
             </tr>
         </Table>
+    </form>
         </div>
        
     </body>
